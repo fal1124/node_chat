@@ -1,0 +1,35 @@
+{
+  "name": "node_chat",
+  "version": "1.0.0",
+  "description": "このプロジェクトは、Node.js・Jade(Pug)・PostgreSQL を使用して構築する リアルタイムチャットアプリケーションです。   Socket.IO によるリアルタイム通信、PostgreSQL によるメッセージ永続化を備えています。",
+  "homepage": "https://github.com/fal1124/node_chat#readme",
+  "bugs": {
+    "url": "https://github.com/fal1124/node_chat/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fal1124/node_chat.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@types/bootstrap": "^5.2.11",
+    "bootstrap": "^5.3.8",
+    "express": "^5.2.1",
+    "pug": "^3.0.4",
+    "socket.io": "^4.8.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.4.1",
+    "@types/pug": "^2.0.10",
+    "nodemon": "^3.1.14",
+    "typescript": "^7.0.2"
+  }
+}
