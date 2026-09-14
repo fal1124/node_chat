@@ -2,7 +2,7 @@ const express = require('express')
 const {createServer} = require('node:http')
 const {Server} = require('socket.io')
 
-module.exports = function(app){
+let socket = function(app){
     const server = createServer(app)
     const io = new Server(server)
     io.on('connection',(socket)=>{
@@ -15,5 +15,7 @@ module.exports = function(app){
         console.log('user disconnected')
       })
    })
-    return server
+   return server
 }
+
+module.exports = socket
