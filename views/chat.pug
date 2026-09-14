@@ -1,0 +1,18 @@
+doctype html
+html(lang="ja")
+    head
+        title chat
+        link(rel="stylesheet",href='/node_modules/bootstrap/dist/css/bootstrap.min.css')
+        script(src='/node_modules/bootstrap/dist/js/bootstrap.min.js')
+        script(src='/node_modules/socket.io/client-dist/socket.io.js')
+        link(rel="stylesheet",href='/css/chat.css')
+    body 
+      nav.navbar.bg-secondary
+          span.navbar-brand.mb-0.h1.me-0.text-light Junya  
+      div.container
+        ul#messages
+          form#form(action="") 
+           div.fixed-bottom.d-flex.gap-2
+            input.form-control.flex-grow-1(type="text",id='input',)
+            button.btn.btn-primary(type="button",id='send') >
+script(src='/js/chat.js')            
