@@ -1,0 +1,28 @@
+doctype html
+html(lang="ja")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        include ../common/common.pug
+        meta(name="theme-color", content="#712cf9")
+        title Login
+    body.d-flex.align-items-center.py-4.bg-body-tertiary
+    main.form-signin.w-100.m-auto
+      form
+        img(class="mb-4" src="/img/bootstrap-logo.svg"
+            alt="" width="72" height="57")
+        h1.h3.mb-3.fv-normal Login
+        div.form-floating
+            input(type="email" 
+            class="form-control" 
+            id="floatingInput" 
+            placeholder="name@example.com")
+            label(for="floatingInput") ID
+        div.form-floating
+            input(type="password"
+                  class="form-control"
+                  id="floatingPassword"
+                  placeholder="Password")
+            label(for="floatingPassword") Password
+        button.btn.btn-primary.w-100.py-2(type="submit") Sign In
+        script(src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js")    
